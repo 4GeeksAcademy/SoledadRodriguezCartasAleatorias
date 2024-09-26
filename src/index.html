@@ -13,16 +13,26 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <form>
+      <div class="row d-flex">
+      <div class="col input-group">
+        <span class="input-group-text">Width</span>
+        <input type="number" id="cardWidth" class="form-control">
+      </div>
+      <div class="col input-group">
+        <span  class="input-group-text">Height</span>
+        <input id="cardHeight" class="form-control">
+      </div>
+      <div class="col">
+        <button onclick="createRandomCard()" type="submit" class="button btn btn-primary ">Submit</button>
+      </div>
+      </div>
+    </form>
+    <div class="d-flex justify-content-center  p-4">
+      <div class="carta position-relative"">
+        <h1 id="basto" class="palo position-absolute top-0 start-0 ">♦</h1>
+        <h1 id="cardValue" class="valor position-absolute top-50 start-50 translate-middle">1</h1>
+        <h1 id="bastoAbajo" class=" palo und position-absolute bottom-0 end-0 p-1">♥</h1>
       </div>
     </div>
   </body>
